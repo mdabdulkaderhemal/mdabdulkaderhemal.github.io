@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Md Abdul Kader Hemal",
+  "alternateName": ["Abdul Kader Hemal", "Hemal"],
+  "description": "Engineering student from Dhaka, Bangladesh, passionate about technology and innovation.",
+  "image": "https://mdabdulkaderhemal.github.io/photo.jpg",
+  "url": "https://mdabdulkaderhemal.github.io/",
+  "jobTitle": "Engineering Student",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dhaka",
+    "addressCountry": "BD"
+  },
+  "sameAs": [
+    "https://www.facebook.com/himel.vevos",
+    "https://www.instagram.com/himel_vevos",
+    "https://www.linkedin.com/in/mdabdulkaderhemal/",
+    "https://www.facebook.com/abdulkaderhemal"
+  ]
+}
