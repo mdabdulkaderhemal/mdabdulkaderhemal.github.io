@@ -306,6 +306,67 @@
     }
     footer a { color: var(--accent); text-decoration: none; }
 
+    /* ── GALLERY ── */
+    #gallery { background: var(--dark); }
+    #gallery .section-label h2 { color: var(--white); }
+    #gallery .section-label span { background: var(--accent); color: var(--dark); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery-item:hover { transform: scale(1.03); box-shadow: 0 16px 40px rgba(0,188,212,0.3); }
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+    }
+    .gallery-item:hover img { transform: scale(1.08); }
+    .gallery-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(15,76,129,0.85) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex; align-items: flex-end; padding: 1.2rem;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay span {
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 9999;
+      align-items: center; justify-content: center;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox img {
+      max-width: 90vw; max-height: 90vh;
+      border-radius: 12px;
+      box-shadow: 0 0 60px rgba(0,188,212,0.3);
+    }
+    .lightbox-close {
+      position: absolute; top: 1.5rem; right: 1.5rem;
+      color: white; font-size: 2.5rem; cursor: pointer;
+      background: none; border: none; line-height: 1;
+    }
+
     /* ── SCROLL ANIMATION ── */
     .fade-in {
       opacity: 0;
@@ -326,6 +387,7 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#gallery">Gallery</a></li>
       <li><a href="#social">Social</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -434,6 +496,127 @@
     </div>
   </section>
 
+  <!-- ── GALLERY ── -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-label fade-in">
+        <span>Photo Gallery</span>
+        <h2>Photos of Md Abdul Kader Hemal</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in" onclick="openLightbox('photo.jpg')">
+          <img
+            src="photo.jpg"
+            alt="Md Abdul Kader Hemal - Profile Photo - Engineering Student Dhaka Bangladesh"
+            title="Md Abdul Kader Hemal"
+          />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-1.jpg')">
+          <img
+            src="md-abdul-kader-hemal-1.jpg"
+            alt="Md Abdul Kader Hemal - Engineering Student from Dhaka Bangladesh"
+            title="Md Abdul Kader Hemal"
+          />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-2.jpg')">
+          <img
+            src="md-abdul-kader-hemal-2.jpg"
+            alt="Abdul Kader Hemal - Dhaka Bangladesh"
+            title="Md Abdul Kader Hemal"
+          />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-3.jpg')">
+          <img
+            src="md-abdul-kader-hemal-3.jpg"
+            alt="Hemal - Md Abdul Kader Hemal Bangladesh"
+            title="Md Abdul Kader Hemal"
+          />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-4.jpg')">
+          <img
+            src="md-abdul-kader-hemal-4.jpg"
+            alt="Md Abdul Kader Hemal - Abdul Kader Hemal Dhaka"
+            title="Md Abdul Kader Hemal"
+          />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-5.jpg')">
+          <img
+            src="md-abdul-kader-hemal-5.jpg"
+            alt="Md Abdul Kader Hemal - Engineering Student Bangladesh"
+            title="Md Abdul Kader Hemal"
+          />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="Md Abdul Kader Hemal" />
+  </div>
+
+  <!-- ImageObject Schema for Google Images -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Photos of Md Abdul Kader Hemal",
+    "description": "Photo gallery of Md Abdul Kader Hemal, Engineering Student from Dhaka, Bangladesh",
+    "url": "https://mdabdulkaderhemal.github.io/#gallery",
+    "associatedMedia": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://mdabdulkaderhemal.github.io/photo.jpg",
+        "name": "Md Abdul Kader Hemal Profile Photo",
+        "description": "Md Abdul Kader Hemal - Engineering Student from Dhaka, Bangladesh",
+        "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-1.jpg",
+        "name": "Md Abdul Kader Hemal Photo 1",
+        "description": "Md Abdul Kader Hemal - Engineering Student Dhaka Bangladesh",
+        "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-2.jpg",
+        "name": "Md Abdul Kader Hemal Photo 2",
+        "description": "Abdul Kader Hemal - Dhaka Bangladesh",
+        "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-3.jpg",
+        "name": "Md Abdul Kader Hemal Photo 3",
+        "description": "Hemal - Md Abdul Kader Hemal Bangladesh",
+        "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-4.jpg",
+        "name": "Md Abdul Kader Hemal Photo 4",
+        "description": "Md Abdul Kader Hemal - Abdul Kader Hemal Dhaka",
+        "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-5.jpg",
+        "name": "Md Abdul Kader Hemal Photo 5",
+        "description": "Md Abdul Kader Hemal - Engineering Student Bangladesh",
+        "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" }
+      }
+    ]
+  }
+  </script>
+
   <!-- ── SOCIAL ── -->
   <section id="social">
     <div class="container">
@@ -525,6 +708,17 @@
       });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
   </script>
 
 </body>
