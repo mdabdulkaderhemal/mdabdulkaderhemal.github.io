@@ -1,148 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Md Abdul Kader Hemal - Software Developer Portfolio">
-    <!-- These meta tags are crucial for SEO -->
-    <title>Md Abdul Kader Hemal | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Md Abdul Kader Hemal | EEE Graduate | University of Dhaka | Control Systems Researcher</title>
+  <meta name="description" content="Md Abdul Kader Hemal – BSc EEE Graduate from University of Dhaka. Researcher in Adaptive Control, Fuzzy Logic, PID and Sliding Mode Control for Electric Vehicles. MATLAB, Python, Simulink expert." />
+  <meta name="keywords" content="Md Abdul Kader Hemal, Abdul Kader Hemal, Hemal, EEE University of Dhaka, Control Systems, Adaptive PID, Fuzzy Logic Control, Sliding Mode Control, PMDC Motor, Electric Vehicle, Bangladesh Engineer" />
+  <meta name="author" content="Md Abdul Kader Hemal" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="DKRplHKFMLOfpqfat8kYHKZMZNtS0xP25sNQOUY6jG8" />
+  <link rel="canonical" href="https://mdabdulkaderhemal.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Md Abdul Kader Hemal | EEE Graduate | Control Systems Researcher" />
+  <meta property="og:description" content="BSc EEE Graduate from University of Dhaka. Researcher in Adaptive Control, Fuzzy Logic & Sliding Mode Control for Electric Vehicles." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://mdabdulkaderhemal.github.io/" />
+  <meta property="og:image" content="https://mdabdulkaderhemal.github.io/photo.jpg" />
+  <meta property="profile:first_name" content="Md Abdul Kader" />
+  <meta property="profile:last_name" content="Hemal" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Md Abdul Kader Hemal | EEE Graduate | Control Systems Researcher" />
+  <meta name="twitter:description" content="BSc EEE Graduate from University of Dhaka. Researcher in Adaptive Control for Electric Vehicles." />
+  <meta name="twitter:image" content="https://mdabdulkaderhemal.github.io/photo.jpg" />
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md Abdul Kader Hemal",
+    "alternateName": ["Abdul Kader Hemal", "Hemal"],
+    "description": "BSc EEE Graduate from University of Dhaka. Researcher specializing in Adaptive Control, Fuzzy Logic, PID and Sliding Mode Control techniques for Electric Vehicles.",
+    "image": "https://mdabdulkaderhemal.github.io/photo.jpg",
+    "url": "https://mdabdulkaderhemal.github.io/",
+    "jobTitle": "EEE Graduate & Control Systems Researcher",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Dhaka",
+      "url": "https://www.du.ac.bd/"
+    },
+    "knowsAbout": ["Adaptive Control", "PID Control", "Fuzzy Logic Control", "Sliding Mode Control", "MATLAB", "Simulink", "Python", "Electric Vehicles", "PMDC Motor", "Power Electronics"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dhaka",
+      "addressCountry": "BD"
+    },
+    "sameAs": [
+      "https://www.facebook.com/himel.vevos",
+      "https://www.instagram.com/himel_vevos",
+      "https://www.linkedin.com/in/mdabdulkaderhemal/",
+      "https://www.facebook.com/abdulkaderhemal",
+      "https://medium.com/@mdabdulkaderhemal",
+      "https://about.me/mdabdulkaderhemal"
+    ]
+  }
+  </script>
+
+  <!-- ImageGallery Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Photos of Md Abdul Kader Hemal",
+    "description": "Photo gallery of Md Abdul Kader Hemal, EEE Graduate and Control Systems Researcher from University of Dhaka, Bangladesh",
+    "url": "https://mdabdulkaderhemal.github.io/#gallery",
+    "associatedMedia": [
+      { "@type": "ImageObject", "contentUrl": "https://mdabdulkaderhemal.github.io/photo.jpg", "name": "Md Abdul Kader Hemal Profile Photo", "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" } },
+      { "@type": "ImageObject", "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-1.jpg", "name": "Md Abdul Kader Hemal Photo 1", "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" } },
+      { "@type": "ImageObject", "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-2.jpg", "name": "Md Abdul Kader Hemal Photo 2", "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" } },
+      { "@type": "ImageObject", "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-3.jpg", "name": "Md Abdul Kader Hemal Photo 3", "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" } },
+      { "@type": "ImageObject", "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-4.jpg", "name": "Md Abdul Kader Hemal Photo 4", "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" } },
+      { "@type": "ImageObject", "contentUrl": "https://mdabdulkaderhemal.github.io/md-abdul-kader-hemal-5.jpg", "name": "Md Abdul Kader Hemal Photo 5", "author": { "@type": "Person", "name": "Md Abdul Kader Hemal" } }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #0f4c81; --accent: #00bcd4; --gold: #f4a620;
+      --light: #f0f7ff; --dark: #0d1b2a; --text: #334155;
+      --muted: #64748b; --white: #ffffff;
+      --card-shadow: 0 8px 32px rgba(15,76,129,0.10);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--light); color: var(--text); line-height: 1.7; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(15,76,129,0.97); backdrop-filter: blur(10px); z-index: 1000; padding: 0 2rem; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { color: var(--white); font-weight: 700; font-size: 1rem; }
+    .nav-links { display: flex; gap: 1.2rem; list-style: none; flex-wrap: wrap; }
+    .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+
+    .hero { min-height: 100vh; background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 60%, #1565c0 100%); display: flex; align-items: center; justify-content: center; text-align: center; padding: 5rem 2rem 3rem; }
+    .hero-content { position: relative; z-index: 1; }
+    .avatar-wrapper { width: 160px; height: 160px; border-radius: 50%; border: 5px solid var(--accent); overflow: hidden; margin: 0 auto 1.5rem; box-shadow: 0 0 0 8px rgba(0,188,212,0.2); }
+    .avatar-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-badge { display: inline-block; background: rgba(244,166,32,0.15); border: 1px solid var(--gold); color: var(--gold); font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 0.3rem 1rem; border-radius: 50px; margin-bottom: 1rem; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); color: var(--white); margin-bottom: 0.5rem; }
+    .hero .tagline { font-size: 1rem; color: var(--accent); font-weight: 600; margin-bottom: 0.4rem; }
+    .hero .sub-tagline { font-size: 0.88rem; color: rgba(255,255,255,0.65); margin-bottom: 0.3rem; }
+    .hero .location { font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-bottom: 2rem; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 0.7rem 1.8rem; border-radius: 50px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: all 0.25s; display: inline-flex; align-items: center; gap: 0.5rem; }
+    .btn-primary { background: var(--accent); color: var(--dark); }
+    .btn-primary:hover { background: #00e5ff; transform: translateY(-2px); }
+    .btn-outline { border: 2px solid rgba(255,255,255,0.6); color: var(--white); background: transparent; }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+
+    section { padding: 5rem 1.5rem; }
+    .container { max-width: 960px; margin: 0 auto; }
+    .section-label { text-align: center; margin-bottom: 3rem; }
+    .section-label span { display: inline-block; background: var(--primary); color: var(--white); font-size: 0.78rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 0.3rem 1rem; border-radius: 50px; margin-bottom: 0.75rem; }
+    .section-label h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--dark); }
+
+    #about { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; }
+    @media (max-width: 640px) { .about-grid { grid-template-columns: 1fr; text-align: center; } }
+    .about-photo { width: 100%; aspect-ratio: 1; border-radius: 20px; object-fit: cover; box-shadow: var(--card-shadow); }
+    .about-text h3 { font-size: 1.5rem; color: var(--primary); margin-bottom: 0.75rem; }
+    .about-text p { color: var(--muted); margin-bottom: 1rem; font-size: 0.97rem; }
+    .info-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+    .chip { background: var(--light); color: var(--primary); font-size: 0.8rem; font-weight: 600; padding: 0.35rem 0.9rem; border-radius: 50px; border: 1px solid rgba(15,76,129,0.15); }
+
+    #research { background: var(--light); }
+    .timeline { position: relative; padding-left: 2rem; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, var(--primary), var(--accent)); border-radius: 3px; }
+    .timeline-item { position: relative; margin-bottom: 2rem; }
+    .timeline-item::before { content: ''; position: absolute; left: -2.45rem; top: 0.4rem; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: 3px solid var(--white); box-shadow: 0 0 0 2px var(--accent); }
+    .timeline-card { background: var(--white); border-radius: 16px; padding: 1.5rem; box-shadow: var(--card-shadow); border-left: 4px solid var(--accent); }
+    .timeline-card .year { font-size: 0.78rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.3rem; }
+    .timeline-card h4 { font-size: 1.05rem; color: var(--dark); font-weight: 700; margin-bottom: 0.3rem; }
+    .timeline-card .institution { font-size: 0.9rem; color: var(--primary); font-weight: 600; margin-bottom: 0.5rem; }
+    .timeline-card p { font-size: 0.88rem; color: var(--muted); }
+
+    .thesis-box { background: linear-gradient(135deg, var(--primary) 0%, #1565c0 100%); border-radius: 20px; padding: 2rem; color: var(--white); margin-top: 2rem; }
+    .thesis-box .thesis-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+    .thesis-box h4 { font-size: 1rem; font-weight: 600; line-height: 1.7; color: var(--white); margin-bottom: 1rem; }
+    .thesis-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .thesis-tag { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.95); font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.75rem; border-radius: 50px; }
+
+    #skills { background: var(--white); }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
+    .skill-card { background: var(--light); border-radius: 16px; padding: 1.5rem; transition: transform 0.25s, box-shadow 0.25s; border: 1px solid rgba(15,76,129,0.08); }
+    .skill-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow); }
+    .skill-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .skill-card h4 { font-size: 0.95rem; color: var(--dark); font-weight: 700; margin-bottom: 0.4rem; }
+    .skill-card p { font-size: 0.83rem; color: var(--muted); }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.6rem; }
+    .skill-tag { background: rgba(15,76,129,0.08); color: var(--primary); font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 50px; }
+
+    #gallery { background: var(--dark); }
+    #gallery .section-label h2 { color: var(--white); }
+    #gallery .section-label span { background: var(--accent); color: var(--dark); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .gallery-item { position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 3/4; cursor: pointer; box-shadow: 0 8px 24px rgba(0,0,0,0.4); transition: transform 0.3s, box-shadow 0.3s; }
+    .gallery-item:hover { transform: scale(1.03); box-shadow: 0 16px 40px rgba(0,188,212,0.3); }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; }
+    .gallery-item:hover img { transform: scale(1.08); }
+    .gallery-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,76,129,0.85) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s; display: flex; align-items: flex-end; padding: 1.2rem; }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay span { color: var(--white); font-weight: 600; font-size: 0.88rem; }
+
+    .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9999; align-items: center; justify-content: center; }
+    .lightbox.active { display: flex; }
+    .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 12px; }
+    .lightbox-close { position: absolute; top: 1.5rem; right: 1.5rem; color: white; font-size: 2.5rem; cursor: pointer; background: none; border: none; }
+
+    #social { background: var(--light); }
+    .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
+    .social-card { border-radius: 16px; padding: 1.5rem; text-align: center; text-decoration: none; color: var(--white); font-weight: 700; font-size: 0.9rem; transition: transform 0.25s, box-shadow 0.25s; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+    .social-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.2); }
+    .s-icon { font-size: 2rem; }
+    .s-handle { font-size: 0.75rem; font-weight: 400; opacity: 0.85; }
+    .fb  { background: linear-gradient(135deg, #1877f2, #0d5fc0); }
+    .ig  { background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af); }
+    .li  { background: linear-gradient(135deg, #0077b5, #005b90); }
+    .fbpg{ background: linear-gradient(135deg, #42a5f5, #1565c0); }
+    .md  { background: linear-gradient(135deg, #111, #333); }
+    .am  { background: linear-gradient(135deg, #305B90, #529bf5); }
+
+    #contact { background: var(--dark); }
+    #contact .section-label h2 { color: var(--white); }
+    .contact-box { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 2.5rem; text-align: center; }
+    .contact-box p { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; }
+    .contact-email { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent); font-size: 1.1rem; font-weight: 600; text-decoration: none; margin-bottom: 2rem; }
+    footer { background: #060d15; color: rgba(255,255,255,0.4); text-align: center; padding: 1.5rem; font-size: 0.85rem; }
+    footer a { color: var(--accent); text-decoration: none; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <a href="#" class="text-xl font-bold text-blue-600">Md Abdul Kader Hemal</a>
-                <div class="space-x-4 hidden md:block">
-                    <a href="#about" class="hover:text-blue-600 transition">About</a>
-                    <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-                    <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
-                </div>
-            </div>
+  <nav>
+    <div class="nav-brand">Md Abdul Kader Hemal</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#social">Social</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="avatar-wrapper">
+        <img src="photo.jpg"
+          onerror="this.src='https://ui-avatars.com/api/?name=Md+Abdul+Kader+Hemal&size=160&background=0f4c81&color=ffffff&bold=true'"
+          alt="Md Abdul Kader Hemal - EEE Graduate University of Dhaka Bangladesh" />
+      </div>
+      <div class="hero-badge">🎓 BSc in EEE — University of Dhaka</div>
+      <h1>Md Abdul Kader Hemal</h1>
+      <p class="tagline">Control Systems Researcher & EEE Engineer</p>
+      <p class="sub-tagline">Adaptive Control · Fuzzy Logic · Sliding Mode Control · Electric Vehicles</p>
+      <p class="location">📍 Dhaka, Bangladesh</p>
+      <div class="hero-btns">
+        <a href="#research" class="btn btn-primary">View My Research</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-label fade-in"><span>Who I Am</span><h2>About Me</h2></div>
+      <div class="about-grid fade-in">
+        <img src="photo.jpg" class="about-photo"
+          onerror="this.src='https://ui-avatars.com/api/?name=Md+Abdul+Kader+Hemal&size=400&background=0f4c81&color=ffffff&bold=true'"
+          alt="Md Abdul Kader Hemal – EEE Graduate University of Dhaka Bangladesh Control Systems Researcher" />
+        <div class="about-text">
+          <h3>Hello! I'm Hemal 👋</h3>
+          <p>I am <strong>Md Abdul Kader Hemal</strong>, a graduate in <strong>Electrical and Electronic Engineering (EEE)</strong> from the <strong>University of Dhaka</strong>, Bangladesh. My academic journey has been deeply focused on <strong>control systems engineering</strong> — particularly Adaptive Control, Fuzzy Logic, and Sliding Mode Control techniques.</p>
+          <p>My undergraduate thesis investigated the <strong>performance and energy-efficiency</strong> of multiple advanced control strategies for <strong>PMDC Motor Speed Regulation in Electric Vehicles</strong> — a cutting-edge area at the intersection of power electronics and sustainable transportation.</p>
+          <p>I also have hands-on experience in <strong>teaching and tutoring</strong> at the school and college level, where I enjoy simplifying complex engineering concepts into clear, understandable lessons.</p>
+          <div class="info-chips">
+            <span class="chip">🎓 BSc EEE — University of Dhaka</span>
+            <span class="chip">⚡ Control Systems Engineer</span>
+            <span class="chip">📍 Dhaka, Bangladesh</span>
+            <span class="chip">🚗 Electric Vehicle Researcher</span>
+            <span class="chip">📚 Educator & Tutor</span>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6">Hi, I'm <span class="text-blue-600">Md Abdul Kader Hemal</span></h1>
-            <p class="text-xl text-gray-600 mb-8">A passionate Software Developer building impactful web applications and solving complex problems.</p>
-            <div class="flex justify-center space-x-4">
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Get In Touch</a>
-                <a href="#projects" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition">View My Work</a>
-            </div>
+  <section id="research">
+    <div class="container">
+      <div class="section-label fade-in"><span>Academic Journey</span><h2>Education & Research</h2></div>
+      <div class="timeline fade-in">
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="year">🎓 University Education</div>
+            <h4>Bachelor of Science in Electrical and Electronic Engineering (EEE)</h4>
+            <div class="institution">University of Dhaka, Bangladesh</div>
+            <p>Completed a rigorous undergraduate program in EEE with a strong focus on control systems, power electronics, circuit analysis, and signal processing.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white px-4">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <!-- Placeholder for profile image -->
-                    <div class="bg-gray-200 w-full h-80 rounded-lg flex items-center justify-center text-gray-500">
-                        [Your Photo Here]
-                    </div>
-                </div>
-                <div>
-                    <p class="text-lg text-gray-600 mb-6">
-            <p>
-            I'm <strong>Md Abdul Kader Hemal</strong>, a graduate student in 
-            <strong>Electrical and Electronic Engineering (EEE)</strong> at the 
-            <strong>University of Dhaka</strong>. Based in Dhaka, Bangladesh, my current 
-            research is highly focused on advanced <strong>control techniques</strong>.
-          </p>
-          <p>
-            I believe in using robust engineering principles to create meaningful solutions.
-            I'm always looking for opportunities to grow, collaborate, and make a
-            positive impact through my academic research and projects.
-          </p>
-                    </p>
-                    <div class="flex space-x-4 mt-6">
-                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">JavaScript</span>
-                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Python</span>
-                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">React</span>
-                        <!-- Add more skills here -->
-                    </div>
-                </div>
-            </div>
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="year">🔬 Undergraduate Research</div>
+            <h4>Control Techniques for PMDC Motor Speed Regulation in Electric Vehicles</h4>
+            <div class="institution">Department of EEE, University of Dhaka</div>
+            <p>Conducted in-depth research comparing PID, Adaptive PID, Fuzzy Logic, Fuzzy-PID Hybrid, and Sliding Mode Control strategies for PMDC Motor Speed Regulation — evaluating both performance and energy-efficiency for Electric Vehicle applications.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">My Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="bg-gray-200 h-48 w-full"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Project Name 1</h3>
-                        <p class="text-gray-600 mb-4">A brief description of what this project does and the technologies used to build it.</p>
-                        <a href="#" class="text-blue-600 font-semibold hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="bg-gray-200 h-48 w-full"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Project Name 2</h3>
-                        <p class="text-gray-600 mb-4">A brief description of what this project does and the technologies used to build it.</p>
-                        <a href="#" class="text-blue-600 font-semibold hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="bg-gray-200 h-48 w-full"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Project Name 3</h3>
-                        <p class="text-gray-600 mb-4">A brief description of what this project does and the technologies used to build it.</p>
-                        <a href="#" class="text-blue-600 font-semibold hover:underline">View on GitHub →</a>
-                    </div>
-                </div>
-
-            </div>
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <div class="year">📚 Teaching Experience</div>
+            <h4>Educator & Tutor — School & College Level</h4>
+            <div class="institution">Dhaka, Bangladesh</div>
+            <p>Provided academic tutoring and teaching support to school and college level students in Mathematics, Physics, and foundational Engineering subjects.</p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
-            <p class="text-xl text-gray-600 mb-8">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-            <a href="mailto:your.email@example.com" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">Say Hello</a>
-            
-            <div class="flex justify-center space-x-6 mt-12">
-                <!-- Replace # with your actual links -->
-                <a href="#" target="_blank" class="text-gray-400 hover:text-blue-600 text-3xl transition">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="#" target="_blank" class="text-gray-400 hover:text-blue-600 text-3xl transition">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#" target="_blank" class="text-gray-400 hover:text-blue-600 text-3xl transition">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
+      <div class="thesis-box fade-in">
+        <div class="thesis-label">📄 Undergraduate Thesis</div>
+        <h4>Performance and Energy-Efficiency Comparison of PID, Adaptive PID, Fuzzy Logic, Fuzzy–PID Hybrid, and Sliding Mode Control for PMDC Motor Speed Regulation in Electric Vehicles</h4>
+        <div class="thesis-tags">
+          <span class="thesis-tag">PID Control</span>
+          <span class="thesis-tag">Adaptive PID</span>
+          <span class="thesis-tag">Fuzzy Logic</span>
+          <span class="thesis-tag">Fuzzy-PID Hybrid</span>
+          <span class="thesis-tag">Sliding Mode Control</span>
+          <span class="thesis-tag">PMDC Motor</span>
+          <span class="thesis-tag">Electric Vehicles</span>
+          <span class="thesis-tag">Energy Efficiency</span>
+          <span class="thesis-tag">Speed Regulation</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 text-center">
-        <p>&copy; 2024 Md Abdul Kader Hemal. Built from scratch.</p>
-    </footer>
+  <section id="skills">
+    <div class="container">
+      <div class="section-label fade-in"><span>Technical Expertise</span><h2>Skills & Tools</h2></div>
+      <div class="skills-grid">
+        <div class="skill-card fade-in">
+          <div class="skill-icon">⚙️</div>
+          <h4>Control Systems</h4>
+          <p>Expert in designing and analyzing classical and modern control systems for real-world applications.</p>
+          <div class="skill-tags"><span class="skill-tag">PID</span><span class="skill-tag">Adaptive Control</span><span class="skill-tag">Sliding Mode</span></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🧠</div>
+          <h4>Intelligent Control</h4>
+          <p>Designing intelligent controllers using AI-based methods for complex, non-linear systems.</p>
+          <div class="skill-tags"><span class="skill-tag">Fuzzy Logic</span><span class="skill-tag">Fuzzy-PID Hybrid</span></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🖥️</div>
+          <h4>MATLAB & Simulink</h4>
+          <p>Proficient in simulation, modeling, and analysis of control systems and power electronics.</p>
+          <div class="skill-tags"><span class="skill-tag">MATLAB</span><span class="skill-tag">Simulink</span><span class="skill-tag">Control Toolbox</span></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">🐍</div>
+          <h4>Python Programming</h4>
+          <p>Using Python for data analysis, simulation scripting, and engineering computations.</p>
+          <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">NumPy</span><span class="skill-tag">Matplotlib</span></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">⚡</div>
+          <h4>Power Electronics</h4>
+          <p>Strong foundation in power electronics, motor drives, and electric vehicle power systems.</p>
+          <div class="skill-tags"><span class="skill-tag">Motor Drives</span><span class="skill-tag">PMDC Motor</span><span class="skill-tag">EV Systems</span></div>
+        </div>
+        <div class="skill-card fade-in">
+          <div class="skill-icon">📚</div>
+          <h4>Teaching & Mentoring</h4>
+          <p>Experienced educator with a talent for explaining complex engineering concepts clearly.</p>
+          <div class="skill-tags"><span class="skill-tag">Tutoring</span><span class="skill-tag">Mentoring</span><span class="skill-tag">Communication</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="gallery">
+    <div class="container">
+      <div class="section-label fade-in"><span>Photo Gallery</span><h2>Photos of Md Abdul Kader Hemal</h2></div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in" onclick="openLightbox('photo.jpg')">
+          <img src="photo.jpg" alt="Md Abdul Kader Hemal - EEE Graduate University of Dhaka Bangladesh" title="Md Abdul Kader Hemal" />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-1.jpg')">
+          <img src="md-abdul-kader-hemal-1.jpg" alt="Md Abdul Kader Hemal - Control Systems Researcher Dhaka Bangladesh" title="Md Abdul Kader Hemal" />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-2.jpg')">
+          <img src="md-abdul-kader-hemal-2.jpg" alt="Abdul Kader Hemal - EEE Engineer Bangladesh" title="Md Abdul Kader Hemal" />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-3.jpg')">
+          <img src="md-abdul-kader-hemal-3.jpg" alt="Hemal - Md Abdul Kader Hemal University of Dhaka" title="Md Abdul Kader Hemal" />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-4.jpg')">
+          <img src="md-abdul-kader-hemal-4.jpg" alt="Md Abdul Kader Hemal - EEE Graduate Bangladesh Engineer" title="Md Abdul Kader Hemal" />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+        <div class="gallery-item fade-in" onclick="openLightbox('md-abdul-kader-hemal-5.jpg')">
+          <img src="md-abdul-kader-hemal-5.jpg" alt="Md Abdul Kader Hemal - Electric Vehicle Control Systems Researcher" title="Md Abdul Kader Hemal" />
+          <div class="gallery-overlay"><span>Md Abdul Kader Hemal</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightbox-img" src="" alt="Md Abdul Kader Hemal" />
+  </div>
+
+  <section id="social">
+    <div class="container">
+      <div class="section-label fade-in"><span>Find Me Online</span><h2>Connect With Me</h2></div>
+      <div class="social-grid fade-in">
+        <a href="https://www.facebook.com/himel.vevos" class="social-card fb" target="_blank" rel="noopener noreferrer">
+          <span class="s-icon">📘</span><strong>Facebook</strong><span class="s-handle">Md Abdul Kader Hemal</span>
+        </a>
+        <a href="https://www.instagram.com/himel_vevos" class="social-card ig" target="_blank" rel="noopener noreferrer">
+          <span class="s-icon">📸</span><strong>Instagram</strong><span class="s-handle">@himel_vevos</span>
+        </a>
+        <a href="https://www.linkedin.com/in/mdabdulkaderhemal/" class="social-card li" target="_blank" rel="noopener noreferrer">
+          <span class="s-icon">💼</span><strong>LinkedIn</strong><span class="s-handle">Md Abdul Kader Hemal</span>
+        </a>
+        <a href="https://www.facebook.com/abdulkaderhemal" class="social-card fbpg" target="_blank" rel="noopener noreferrer">
+          <span class="s-icon">🔷</span><strong>Facebook Page</strong><span class="s-handle">Md Abdul Kader Hemal</span>
+        </a>
+        <a href="https://medium.com/@mdabdulkaderhemal" class="social-card md" target="_blank" rel="noopener noreferrer">
+          <span class="s-icon">✍️</span><strong>Medium</strong><span class="s-handle">@mdabdulkaderhemal</span>
+        </a>
+        <a href="https://about.me/mdabdulkaderhemal" class="social-card am" target="_blank" rel="noopener noreferrer">
+          <span class="s-icon">🌐</span><strong>About.me</strong><span class="s-handle">mdabdulkaderhemal</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-label fade-in"><span>Get In Touch</span><h2>Contact Me</h2></div>
+      <div class="contact-box fade-in">
+        <p>Open to research collaborations, professional opportunities, or simply connecting with fellow engineers and researchers!</p>
+        <a href="mailto:mdabdulkaderhemal@gmail.com" class="contact-email">✉️ mdabdulkaderhemal@gmail.com</a>
+        <br />
+        <div class="hero-btns" style="margin-top:1rem;">
+          <a href="https://www.linkedin.com/in/mdabdulkaderhemal/" class="btn btn-primary" target="_blank">Connect on LinkedIn</a>
+          <a href="https://www.facebook.com/himel.vevos" class="btn btn-outline" target="_blank">Message on Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <strong style="color:rgba(255,255,255,0.7)">Md Abdul Kader Hemal</strong> · BSc EEE, University of Dhaka · Dhaka, Bangladesh</p>
+    <p style="margin-top:0.4rem;"><a href="#home">Back to Top ↑</a></p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
 </body>
 </html>
